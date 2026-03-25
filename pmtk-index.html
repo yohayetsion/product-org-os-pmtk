@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Yohay Etsion" name="author">
+    <meta content="Product Org OS &ndash; PMTK Edition" name="owner">
+    <meta content="Based on Blackblot PMTK Methodology&trade; by Gabriel Steinhardt. AI implementation by Product Org OS." name="description">
+    <title>Product Org OS &mdash; PMTK Version &mdash; AI Skill Index</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100' height='100' rx='12' fill='%23fff'/%3E%3Cg transform='translate(-32.3,-13.14) scale(0.45) translate(35,30)'%3E%3Cpath fill='%23000' d='M220.1,49.8c-7.3,7.2-18,11-26.3,17.3-.5,2,1.5,1.5,1.5,3,4.3,1,6.8-3.6,10.5-.8-1.9,3.6-8.2,2.8-9.8,6.8,1.4,4.1,9.8,1.2,8.3,8.3-3.7,1-8.9.6-8.3,6,4.2,4.1,10.6,5.9,12,12.8-4.1-1.2-7.9-3.6-12-.8-.2,12.5,8.5,16,12.8,24-5.7-2.8-8.8-8.2-15.8-9.8-1.1.7-2.4,1.1-2.3,3,2.3,3.2,4.4,6.6,9,7.5,1.1,2.5,1.6,7.8-2.3,7.5-3.7-4.1-3.2-11.9-9.8-11.3-3.1.3-6.1,5.2-5.3,9,.6,2.5,4.4,2,3.8,5.3-4.3.3-4.7-3.3-9-3-4.2,10-2.7,27.8-2.3,38.3-3.4-9.4-3.8-21.7-5.3-33-1.7-.8-2.7-2.3-5.3-2.3-2.9,2.8-4.6,7.1-2.3,11.3-3.3-.4-4.7-2.8-6-5.3-3.1,3.6-2,11.5-2.3,18-4.8-4.2,1.7-13.9-3.8-18.8-9-.2-11.6,5.9-12,14.3-3.9-1.1-1.6-8.3-2.3-12.8-3.3-1.7-7.5-2.5-9.8-5.3-5.7,1.5-7.4,7.1-11.3,10.5,0-1,2.3-6.2,3-9,.6-2.3-2.6-.9-1.5-3.8-5.5-.3-10.1.4-12,3.8-2.1-3.8,5-5,3.8-10.5-7.4-.9-14,5.5-18,10.5-4.4,3.7-9.5,7.3-14.3,12-6.9,2.6-10.5,8.5-15.7,12.8,8-16.1,28.6-25.9,39.7-41.3,.6-2.3-2.6-.9-1.5-3.8-2.8-.6-3.6.9-6,.8,1.5-1,1.8-3.2,3-4.5-1.8-.7-2.8-2.3-6-1.5,1-3,5.1-2.9,6-6-4.7-5.6-13.5.5-18,2.3,1.5-5.8,6-8.5,10.5-11.3-9.1-8.6-35.4-5.7-54.8-6.8-1.8-1.4,5-.5,6.8-.8,1.7.4,1.1-1.4,2.3-1.5,14.1-1.7,32.5,1,44.3-3-6.7-8.3-22.3-7.7-34.5-10.5,8.3-6.8,26.7,2.2,37.5,0v-3c-3.8-4.1-14.2-1.8-18-6,.5-1.7,1.9-2.6,3-3.8,4.9,1.4,10,4.7,15.8,3-.2-8.6-7.6-9.9-15.8-10.5,3.9-2.4,13-1.7,18-.8,.8-3.8-3-3-3-6,3.4.1,4.1,2.9,6.8,3.8,4.7.7,3.7-4.3,3.7-8.3,3.3,0,7,.4,8.3-1.5,.6-6.1-4-7-4.5-12,4.1,1.6,6.5,5,13.5,3.8,.8-1.4,1.9-2.6,2.3-4.5-2.9-5.3-5.8-10.7-9-15.7,6.1,3.6,9.7,9.8,12.8,16.5,6.5.2,1.4-12.4,1.5-12.7,4.6-.1,1.7,7.3,6.8,6.7,3.4-2.1,1.5-9.5,3.8-12.7,2.2,3.3,2.9,8.1,3,13.5,6.5,4.5,19.2,3,20.3-11.2,4.4,1.6,1.6,10.9,1.5,15,5,4.8,11.2,2.4,12-4.5,2.8,1,4.4,3.1,6,5.3-.8,2.2-3.9,2.1-6,3,.1,3.4,3.9,3.1,5.3,5.3,3.8-.7,3.7-5.3,6-7.5,3.8.9,6.4,3.1,6.8,7.5-3.5-.6-5.2.8-8.3.8-.6,2.6,1.1,2.9.8,5.3,1.6.4,6.1,1.8,7.5,0,1.6,1.5-1.3,5.9.8,8.3C200,63.3,211.2,52.4,220.1,49.8Z'/%3E%3C/g%3E%3C/svg%3E">
+    <style type="text/css">
+      html, body { margin: 0; padding: 0; }
+      table { border-collapse: collapse; }
+      td { font-family: Verdana, Arial, Helvetica, sans-serif; color: #666666; text-align: left; vertical-align: top; padding: 0px; }
+      a { text-decoration: none; color: #FF9933; }
+      a:hover { text-decoration: underline; }
+      a img { border-style: none; }
+      ol { margin-bottom: 5px; margin-top: 10px; }
+      ul { margin-top: 5px; }
+      code.skill {
+        background: #f3f3f3;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'JetBrains Mono', 'Consolas', monospace;
+        color: #E46C0A;
+        font-size: 12px;
+        cursor: default;
+        border: 1px solid #e0e0e0;
+      }
+      span.agent {
+        font-size: 10px;
+        color: #999;
+        margin-left: 4px;
+        white-space: nowrap;
+      }
+      span.ref {
+        font-size: 10px;
+        color: #aaa;
+        font-style: italic;
+      }
+      .note-box {
+        background: #FFFDF5;
+        border: 1px solid #FFE0A0;
+        border-left: 4px solid #FF9933;
+        padding: 12px 16px;
+        margin: 10px 0 15px 0;
+        font-size: 12px;
+        line-height: 18px;
+        color: #666;
+      }
+      .note-box strong { color: #E46C0A; }
+      /* Action Model tables */
+      table.regular_table {
+        border-collapse: collapse;
+        border: 1px solid #C0C0C0;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      table.regular_table td {
+        font-size: 13px;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #C0C0C0;
+      }
+      table.regular_table td p {
+        text-align: left;
+        margin: 0px;
+      }
+      table.regular_table td.centercell {
+        text-align: center;
+      }
+      table.regular_table td.centerboth {
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="border-spacing: 0; width: 100%; max-width: 100%; font-family: Verdana, Arial, Helvetica, sans-serif; color: #666666;" width="100%">
+      <tr>
+        <td align="center" style="padding: 8px 0; width: 90%; background-color: #ffffff;">
+          <table style="border-spacing: 0; width: 100%; max-width: 100%; border: 1px solid #cccccc;" width="100%">
+
+            <!-- Title Header -->
+            <tr>
+              <td bgcolor="#FAFAFA" style="padding: 0; text-align: center; font-size: 0; border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+                <table style="border-spacing: 0; width: 100%; display: inline-table;" width="100%">
+                  <tr>
+                    <td style="padding: 0;">
+                      <table style="border-spacing: 0; width: 100%;" width="100%">
+                        <tr>
+                          <td align="left" style="padding: 10px 20px; font-size: 16px; line-height: 20px; font-weight: bold;">
+                            Product Org OS &mdash; PMTK Version &mdash; AI Skill Index
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Content -->
+            <tr>
+              <td style="padding: 0; text-align: center; font-size: 0;">
+                <table style="border-spacing: 0; width: 100%; display: inline-table;" width="100%">
+                  <tr>
+                    <td style="padding: 0;">
+                      <table style="border-spacing: 0; width: 100%;" width="100%">
+                        <tr>
+                          <td align="justify" style="font-size: 13px; line-height: 17px; padding: 10px 20px; text-align: justify;">
+
+<!-- AI Note -->
+<div class="note-box">
+  <strong>AI-Powered PMTK</strong> &mdash; This is the AI-powered version of the Blackblot PMTK Index. Instead of document templates, each item links to an AI skill that generates the deliverable interactively. Invoke skills in Claude Code using the <code class="skill">/command</code> shown. Each skill is owned by a specific AI agent who brings domain expertise to the deliverable.
+</div>
+
+<p><strong>Abstract</strong></p>
+<ul>
+  <li>Product Org OS &mdash; PMTK Version is a comprehensive, AI-powered professional skill collection for product managers and product marketers, built on the Blackblot PMTK Methodology&trade;. Instead of static document templates, each PMTK deliverable is generated interactively by a specialized AI agent. Six agents collaborate across Product Planning and Product Marketing tracks, producing contextualized deliverables with organizational memory.</li>
+</ul>
+
+<p><br><strong>PMTK Preface</strong></p>
+<ul>
+  <li><a href="https://www.blackblot.com/profile" target="_blank" rel="noopener noreferrer" title="PMTK Account Management"><small>PMTK Account Management</small></a></li>
+  <li>PMTK Overview &mdash; See <code class="skill">/setup</code> for plugin initialization and overview of the AI-powered PMTK system.</li>
+</ul>
+
+<p><br><strong>PMTK Methodology</strong></p>
+<ul>
+  <li>
+    PMTK Core Models &mdash; <span class="ref">Built-in knowledge packs</span>
+    <ul>
+      <li>PMTK Action Model &mdash; Reference framework which governs the sequence of using PMTK skills. <span class="ref">See <code class="skill">reference/pmtk-action-model.md</code></span></li>
+      <li>PMTK Flow Model &mdash; Application of the PMTK Action Model in a stage-gate fashion. <span class="ref">See <code class="skill">reference/pmtk-flow-model.md</code></span></li>
+      <li>PMTK Task Model &mdash; Synchronization of PMTK skills with Blackblot&apos;s product management team and product definition team concepts. <span class="ref">See <code class="skill">reference/pmtk-task-model.md</code></span></li>
+    </ul>
+  </li>
+  <li>
+    PMTK Support Models &mdash; <span class="ref">Built-in knowledge packs</span>
+    <ul>
+      <li>PMTK Action-Team Model &mdash; Synchronization of PMTK Action Model with Blackblot Product Management Team Model. <span class="ref">See <code class="skill">reference/pmtk-action-team-model.md</code></span></li>
+      <li>PMTK MVP Pricing Model &mdash; Illustration of a practical product pricing process. <span class="ref">See <code class="skill">reference/pmtk-mvp-model.md</code></span></li>
+      <li>PMTK PRM Model &mdash; Illustration of a market requirement&apos;s internal structure. <span class="ref">See <code class="skill">reference/pmtk-prm-model.md</code></span></li>
+      <li>PMTK Problem Echelon Model &mdash; Illustration and mapping of the types of problems handled by the industry and the market. <span class="ref">See <code class="skill">reference/pmtk-problem-echelon-model.md</code></span></li>
+      <li>PMTK Product Tree Model &mdash; Illustration of how product functionality can be divided or grouped to make a better offering. <span class="ref">See <code class="skill">reference/pmtk-product-tree-model.md</code></span></li>
+    </ul>
+  </li>
+  <li>
+    Blackblot Concept Models &mdash; <span class="ref">Built-in knowledge packs</span>
+    <ul>
+      <li>Blackblot Product Management Team Model &mdash; Illustration of the responsibilities and makeup of the product management team. <span class="ref">See <code class="skill">reference/pmtk-pm-team-model.md</code></span></li>
+      <li>Blackblot Product Definition Team Model &mdash; Illustration of the responsibilities and makeup of the product definition team. <span class="ref">See <code class="skill">reference/pmtk-pd-team-model.md</code></span></li>
+      <li>Blackblot Product Frames Model &mdash; Illustration that demonstrates how product functionality is built. <span class="ref">See <code class="skill">reference/pmtk-product-frames-model.md</code></span></li>
+      <li>Blackblot Value-Marketing Model &mdash; Illustration that governs the formulation of marketing messages that build Superior Perceived Value. <span class="ref">See <code class="skill">reference/pmtk-value-marketing-model.md</code></span></li>
+      <li>Blackblot Marketing Model &mdash; Illustration that maps the various marketing activities within the marketing domain. <span class="ref">See <code class="skill">reference/pmtk-marketing-model.md</code></span></li>
+    </ul>
+  </li>
+  <li>
+    PMTK Implementation
+    <ul>
+      <li><code class="skill">/setup</code> &mdash; Initialize the PMTK plugin and configure the product management context.</li>
+      <li><code class="skill">/team-charter</code> &mdash; Describes the parameters (aka boundaries) within which the product management team operates. <span class="agent">👔 Director of Products</span></li>
+      <li>Blackblot Product Management Models &mdash; Overview of Blackblot&apos;s product management models. <span class="ref">See <code class="skill">reference/pmtk-pm-models.md</code></span></li>
+      <li>Blackblot Corporate Organizational Structure &mdash; Illustration of a corporate organizational structure corresponding to the Blackblot PMTK Methodology&trade;. <span class="ref">See <code class="skill">reference/pmtk-org-structure.md</code></span></li>
+      <li>PMTK Product Management Glossary &mdash; Glossary containing Blackblot PMTK Methodology&trade; terms and definitions. <span class="ref">See <code class="skill">reference/pmtk-glossary.md</code></span></li>
+      <li>Blackblot Market-Value Pricing Glossary &mdash; Glossary containing Blackblot market-value pricing terms and definitions. <span class="ref">See <code class="skill">reference/pmtk-glossary.md</code></span></li>
+      <li>Blackblot Data-Driven Decision-Making Glossary &mdash; Glossary containing Blackblot data-driven decision-making terms and definitions. <span class="ref">See <code class="skill">reference/pmtk-glossary.md</code></span></li>
+    </ul>
+  </li>
+  <li>
+    PMTK Methodology
+    <ul>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/what-is-product-management" title="Narrated six-minute video which explains what product management is according to the Blackblot PMTK Methodology&trade;">What is Product Management?</a>&nbsp;&ndash;&nbsp;Narrated six-minute video that explains what product management is according to the Blackblot PMTK Methodology&trade;.</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/definition-of-product-management" title="Online Blackblot PMTK Book chapter that explains the Blackblot PMTK Methodology&trade; fundamental concepts">Definition of Product Management</a>&nbsp;&ndash;&nbsp;Online Blackblot PMTK Book chapter that explains the Blackblot PMTK Methodology&trade; fundamental concepts.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br><strong>PMTK Product Planning</strong></p>
+<ul>
+  <li>
+    Requirements Management
+    <ul>
+      <li><code class="skill">/prm-market-requirements</code> &mdash; Description of the market opportunity, market problem, and the resulting market requirements. <span class="agent">📋 Product Planner</span></li>
+      <li><code class="skill">/prm-product-requirements</code> &mdash; High-level description of the functional solution, intended use, and the product features it provides that address the market problem and satisfy needs. <span class="agent">🏗️ Product Architect</span></li>
+      <li><code class="skill">/market-requirements</code> &mdash; Description of the product and the market into which the product will be introduced. An inclusive approach in which business information and market and product requirements are all bundled together in the same document. <span class="agent">📋 Product Planner</span></li>
+    </ul>
+  </li>
+  <li><code class="skill">/use-cases</code> &mdash; Ways various users put the product to use and under which scenarios. <span class="agent">📋 Product Planner</span></li>
+  <li><code class="skill">/features-matrix</code> &mdash; Managing actual product capabilities. <span class="agent">🏗️ Product Architect</span></li>
+  <li><code class="skill">/product-roadmap</code> &mdash; Plan or vision that describes a product&apos;s evolution. <span class="agent">📋 Product Planner</span></li>
+  <li>
+    Pricing Model
+    <ul>
+      <li><code class="skill">/pricing-model</code> &mdash; Building a product pricing model using the Blackblot MVP (Market-Value Pricing) methodology. <span class="agent">📋 Product Planner</span></li>
+    </ul>
+  </li>
+  <li>
+    Win/Loss Analysis
+    <ul>
+      <li><code class="skill">/win-loss-questionnaire</code> &mdash; Information gathering tool in a process whose output helps improve products and develop better sales functions. <span class="agent">📋 Product Planner</span></li>
+      <li><code class="skill">/win-loss-report</code> &mdash; Summary results reporting tool in a process whose output helps improve products and develop better sales functions. <span class="agent">📋 Product Planner</span></li>
+    </ul>
+  </li>
+  <li><code class="skill">/customer-visit</code> &mdash; Planning customer visits with the intent of better understanding their needs. <span class="agent">📋 Product Planner</span></li>
+  <li>
+    Agile Software Development
+    <ul>
+      <li><code class="skill">/agile-guidelines</code> &mdash; Parameters of an interface between the Blackblot PMTK Methodology&trade; and contemporary Agile Software Development principles. <span class="agent">📋 Product Planner</span></li>
+      <li><code class="skill">/scrum-backlog</code> &mdash; Requirements management and work prioritization tool for Agile Scrum conforming to the Blackblot PMTK Methodology&trade;. <span class="agent">📋 Product Planner</span></li>
+    </ul>
+  </li>
+</ul>
+
+<p><br><strong>PMTK Product Marketing</strong></p>
+<ul>
+  <li>
+    Business Case
+    <ul>
+      <li><code class="skill">/business-case</code> &mdash; Examination of a potential market opportunity at a product level. <span class="agent">👔 Director of Products / 📣 Product Marketer</span></li>
+    </ul>
+  </li>
+  <li><code class="skill">/competitor-analysis</code> &mdash; Analysis of competing companies, partially via their products. <span class="agent">📣 Product Marketer</span></li>
+  <li><code class="skill">/product-comparison</code> &mdash; Tabular comparison of competing products. <span class="agent">📣 Product Marketer</span></li>
+  <li><code class="skill">/corporate-mission</code> &mdash; General business direction and company purpose. <span class="agent">📣 Product Marketer</span></li>
+  <li><code class="skill">/product-positioning</code> &mdash; Basis for clear and focused marketing messages that communicate the product&apos;s value proposition to multiple audiences. <span class="agent">📣 Product Marketer</span></li>
+  <li>
+    Value Documents
+    <ul>
+      <li><code class="skill">/sales-axioms</code> &mdash; Fundamental concepts the product is built upon. <span class="agent">📣 Product Marketer</span></li>
+      <li><code class="skill">/psfb</code> &mdash; Outlining a product&apos;s ability to address the overall customer problem by merit of its feature scope and capabilities (Problem/Solution/Feature/Benefit). <span class="agent">📣 Product Marketer</span></li>
+      <li><code class="skill">/usp</code> &mdash; Key value differentiator that sets the product apart from competing products (Unique Selling Proposition). <span class="agent">📣 Product Marketer</span></li>
+    </ul>
+  </li>
+  <li><code class="skill">/market-plan</code> &mdash; Description of the long-term goals and messages delivered to the target market relative to a particular product. <span class="agent">📣 Product Marketer</span></li>
+  <li>
+    Marketing Communications
+    <ul>
+      <li><code class="skill">/marketing-plan</code> &mdash; Selection and application of a marketing mix in the target market relative to the product. <span class="agent">📰 MarCom Manager</span></li>
+      <li><code class="skill">/company-profile</code> &mdash; Overview description of a company. <span class="agent">📰 MarCom Manager</span></li>
+      <li><code class="skill">/product-backgrounder</code> &mdash; Product/service overview information at a glance. <span class="agent">📰 MarCom Manager</span></li>
+      <li><code class="skill">/collateral-matrix</code> &mdash; List of various marketing communications collateral items. <span class="agent">📰 MarCom Manager</span></li>
+      <li><code class="skill">/launch-plan</code> &mdash; Complex project aimed at introducing a product to the market. <span class="agent">📣 Product Marketer</span></li>
+      <li><code class="skill">/press-release-questionnaire</code> &mdash; Eliciting targeted information to create meaningful press releases. <span class="agent">📰 MarCom Manager</span></li>
+    </ul>
+  </li>
+  <li>
+    Sales Support
+    <ul>
+      <li><code class="skill">/company-presentation</code> &mdash; Broad company overview for internal and external audiences. <span class="agent">📣 Product Marketer</span></li>
+      <li><code class="skill">/product-presentation</code> &mdash; Broad product overview for internal and external audiences. <span class="agent">🎯 Sales Engineer</span></li>
+      <li><code class="skill">/lead-generation</code> &mdash; Process of discovering and qualifying prospective customers. <span class="agent">📣 Product Marketer</span></li>
+    </ul>
+  </li>
+  <li><code class="skill">/marketing-review</code> &mdash; Comprehensive inspection of the market and the company&apos;s preparedness. <span class="agent">📣 Product Marketer</span></li>
+</ul>
+
+<p><br><strong>PMTK Process Efficiency</strong></p>
+<ul>
+  <li><code class="skill">/meeting-rules</code> &mdash; Rules and general guidelines for conducting productive corporate meetings.</li>
+  <li><code class="skill">/mbo</code> &mdash; Intelligent form of self-management (Management By Objectives).</li>
+  <li><code class="skill">/decision-making</code> &mdash; Driving an effective process of decision-making within a project.</li>
+  <li><code class="skill">/deliverable-sign-off</code> &mdash; Tool for securing acceptance and commitment to deliverables.</li>
+  <li>
+    Bundle Book
+    <ul>
+      <li><code class="skill">/bundle-book</code> &mdash; Central repository of documents related to a particular product.</li>
+    </ul>
+  </li>
+  <li><code class="skill">/gap-analysis</code> &mdash; Procedure for assessing how well product management tasks are performed.</li>
+  <li>
+    Performance Review
+    <ul>
+      <li><code class="skill">/performance-review</code> &mdash; Product management merit and performance measurement process and tool.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br><strong>PMTK Personnel Management</strong></p>
+<ul>
+  <li>
+    PMTK Career Development
+    <ul>
+      <li><code class="skill">/professional-development</code> &mdash; Process for developing or increasing the professional competencies of product management professionals.</li>
+    </ul>
+  </li>
+  <li>
+    PMTK Team Management
+    <ul>
+      <li><code class="skill">/role-descriptions</code> &mdash; Framework for the roles which conform to the Blackblot PMTK Methodology&trade;.</li>
+      <li><code class="skill">/job-description</code> &mdash; Framework for preparing a PMTK team model compliant job description.</li>
+      <li><code class="skill">/interview-process</code> &mdash; Framework for administering a product management oriented interview process.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br><strong>Blackblot Supplemental Templates</strong></p>
+<ul>
+  <li><code class="skill">/product-vision</code> &mdash; Product&apos;s long-term goal and impact on the target audience.</li>
+  <li><code class="skill">/minimum-viable-product</code> &mdash; Product with enough features to satisfy early users and customers and to generate feedback for future product development.</li>
+  <li><code class="skill">/corporate-strategy-mix</code> &mdash; Formulation and synchronization of three core interconnected strategies (business, market, and product).</li>
+  <li><code class="skill">/product-market-fit</code> &mdash; Potential for a successful product by ensuring a meaningful solution and a receptive market.</li>
+  <li><code class="skill">/b2b-buyer-persona</code> &mdash; Key decision-maker in a business purchase, profiled by goals, challenges, behaviors, and properties.</li>
+</ul>
+
+<p><br><strong>Blackblot PMTK Book</strong></p>
+<ul>
+  <li>&ldquo;<i>The Product Manager&apos;s Toolkit: Methodologies, Processes and Tasks in Technology Product Management</i>&rdquo; second edition book is the most authoritative guide to market-driven product management and the Blackblot Product Manager&apos;s Toolkit<sup>&reg;</sup> (PMTK) product management methodology, a globally adopted best practice. Springer Science+Business Media, ISBN: <a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/dp/3319499971">978-3-319-49997-0</a>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Blackblot MVP Book</strong></p>
+<ul>
+  <li>&ldquo;<i>Market-Value Pricing: Definitions, Concepts, and Processes for Market-Value Centric Pricing</i>&rdquo; book provides readers with the knowledge and tools to partake in pricing activities in a novel, clear, and structured manner. The Blackblot Market-Value Pricing&trade; Model (MVP Model), introduced in this book, helps companies and individuals with their product pricing efforts. Springer Science+Business Media, ISBN: <a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/dp/3030107337">978-3-030-10733-8</a>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Blackblot DDDM Book</strong></p>
+<ul>
+  <li>&ldquo;<i>Data-driven Decision-making for Product Managers: A Primer to Data Literacy in Product Management</i>&rdquo; book is an essential guide for product managers seeking to harness the power of data to drive their decisions. This book emphasizes the importance of developing and maintaining data literacy as a core skill for product managers. Springer Science+Business Media, ISBN: <a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/dp/3031746635">978-3-031-74663-5</a>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><i><strong>Powered by Blackblot&trade;</strong></i><strong> Knowledge Base</strong></p>
+<ul>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/kb" title="Dynamic repository of product management core knowledge based on the Blackblot PMTK Methodology&trade;"><i>Powered by Blackblot&trade;</i> Knowledge Base</a>&nbsp;&ndash;&nbsp;Dynamic repository of product management core knowledge based on the Blackblot PMTK Methodology&trade; and is part of Blackblot&apos;s commitment to providing free lifetime professional and career support to all product managers. Browse the different categories, search for specific topics, or send any <a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/kb/question" title="Send a question to the Powered by Blackblot&trade; Knowledge Base team.">question</a> regarding any topic in product management.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Blackblot Content Retention Tool&trade;</strong></p>
+<ul>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/crt" title="Promotes post-training content retention and helps product managers and product marketers deepen their knowledge">Blackblot Content Retention Tool&trade;</a>&nbsp;&ndash;&nbsp;Promotes post-training content retention and helps product managers and product marketers deepen their knowledge. The Blackblot CRTs challenge individuals with a series of multiple-choice questions that are based on Blackblot PMTK book chapters.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Blackblot Training Program</strong></p>
+<ul>
+  <li>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/education" title="Advanced professional training program based on the Blackblot PMTK Methodology&trade;">Blackblot Strategic Product Management&trade;</a>&nbsp;&ndash;&nbsp;Advanced professional training program based on the Blackblot PMTK Methodology&trade;.
+    <ul>
+      <li>Blackblot specializes in <a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/private" title="Customized Private Training to corporate product teams worldwide">Customized Private Training</a> for corporate product teams worldwide.</li>
+      <li>Two levels of course customization are available: <a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/customization" title="Basic and Advanced customization levels">Basic and Advanced</a>. Basic-level customization is free, while advanced-level customization is fee-based and applies to extended corporate training programs.</li>
+    </ul>
+  </li>
+  <li>
+    <a target="_blank" rel="noopener noreferrer" href="http://www.blackblot.com/education" title="The Blackblot Training Package">Blackblot Training Package&trade;</a>&nbsp;&ndash;&nbsp;All Blackblot training attendees receive at no extra charge:
+    <ul>
+      <li>Digital copy of &ldquo;The Product Manager&apos;s Toolkit: Methodologies: Processes and Tasks in Technology Product Management&rdquo; second edition book.</li>
+      <li>Account to the Blackblot Product Manager&apos;s Toolkit<sup>&reg;</sup> (PMTK) professional template collection.</li>
+      <li>Account to the Blackblot Product Management Professional&trade; (BPMP) certification tests.</li>
+      <li>Account to the Blackblot Psychometric Test&trade; (BPT) psychometric tests.</li>
+      <li>Lifetime free and unlimited updates and upgrades to PMTK.</li>
+      <li>Digital course slides booklet and seminar action plan.</li>
+      <li>Digital copy of the official course certificate of completion.</li>
+      <li><span style="font-size:8px;">All course materials are provided in the English language.</span></li>
+    </ul>
+  </li>
+</ul>
+
+<p><br><strong>Blackblot Product Management Professional&trade; (BPMP) Certification Program</strong></p>
+<ul>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/certification" title="Blackblot Product Management Professional&trade; (BPMP) certification program">Blackblot Certification Program</a>&nbsp;&ndash;&nbsp;Blackblot Product Management Professional&trade; (BPMP) certification program is based on the Blackblot PMTK Methodology&trade; and was developed exclusively by Blackblot to provide product management professionals with a way to differentiate themselves, validate their skills, and gain professional acknowledgment, and enable companies to achieve better consistency in the internal application of the product management discipline.</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/master-bpmp" title="Master Blackblot Product Management Professional&trade; (Master BPMP)">Master BPMP</a>&nbsp;&ndash;&nbsp;Respected and merited accreditation of a Master Blackblot Product Management Professional&trade; (Master BPMP), a top career and professional differentiator, is awarded to individuals who successfully pass all core and advanced Blackblot Product Management Professional&trade; (BPMP) certification program tests (three tests).</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/product-coach" title="Blackblot Certified Product Coach&trade;">Blackblot Certified Product Coach&trade;</a>&nbsp;&ndash;&nbsp;Top accreditation of a Blackblot Certified Product Coach&trade; is awarded to individuals who successfully pass all core, advanced, and subspecialty Blackblot Product Management Professional&trade; (BPMP) certification tests (six tests).</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/bpmp-study" title="BPMP Study Guide">Blackblot Product Management Professional&trade; (BPMP) Study Guide</a>&nbsp;&ndash;&nbsp;Updated and simplified study guide for all available BPMP tests.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Blackblot Psychometric Test&trade; (BPT) Program</strong></p>
+<ul>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/bpt" title="Blackblot Psychometric Test&trade;">Blackblot Psychometric Test&trade;</a>&nbsp;&ndash;&nbsp;Collection of six specialized personality tests that allow practitioners, team leaders, job candidates, human resource managers, and recruiters to assess whether a certain individual&apos;s skill set profile is suitable for a specific role in product management, as defined by Blackblot and according to the Blackblot PMTK Methodology&trade;.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Blackblot Professional Evaluators</strong></p>
+<p>Blackblot provides practitioners, product leaders, job candidates, human resource managers, and recruiters with diverse <a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/evaluators" title="Blackblot professional evaluators">professional evaluators</a>, based on the Blackblot PMTK Methodology&trade;.</p>
+<ul>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/pmeval" title="Blackblot Product Management Maturity Evaluator">Blackblot Product Management Maturity Evaluator</a>&nbsp;&ndash;&nbsp;This Blackblot evaluator helps gauge the level of maturity of the product management practice at a company.</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/bqp" title="Blackblot Qualified Professional&trade; Evaluator">Blackblot Qualified Professional&trade; Evaluator</a>&nbsp;&ndash;&nbsp;This Blackblot evaluator helps assess a particular individual&apos;s professional competency level, as defined by Blackblot and according to the Blackblot PMTK Methodology&trade;.</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/direval" title="Blackblot Director of Products Evaluator">Blackblot Director of Products Evaluator</a>&nbsp;&ndash;&nbsp;This Blackblot evaluator helps individuals gauge their potential for a Director of Products position.</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/needs" title="Blackblot Training Needs Evaluator">Blackblot Training Needs Evaluator</a>&nbsp;&ndash;&nbsp;This Blackblot evaluator helps individuals choose the Blackblot training program that best fits their professional profile and corporate needs.</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/tech-driven" title="Blackblot Technology-Driven Evaluator">Blackblot Technology-Driven Evaluator</a>&nbsp;&ndash;&nbsp;This evaluator explores the effects and degree of the technology-driven environment that product management professionals may experience at their workplace.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><br><strong>PMTK Action Model</strong></p>
+<table class="regular_table" border="1" cellpadding="0" cellspacing="0" summary="PMTK Action Model">
+  <tbody>
+    <tr>
+      <td class="centerboth" style="width:6%;" rowspan="12">
+        <p style="text-align:center;"><strong>R</strong></p>
+        <p style="text-align:center;"><strong>E</strong></p>
+        <p style="text-align:center;"><strong>S</strong></p>
+        <p style="text-align:center;"><strong>E</strong></p>
+        <p style="text-align:center;"><strong>A</strong></p>
+        <p style="text-align:center;"><strong>R</strong></p>
+        <p style="text-align:center;"><strong>C</strong></p>
+        <p style="text-align:center;"><strong>H</strong></p>
+      </td>
+      <td colspan="4" width="87%">
+        <p style="text-align:center;">&blacktriangledown;<strong>Product Planning</strong>&blacktriangledown;</p>
+      </td>
+      <td class="centerboth" style="width:6%;" rowspan="12">
+        <p style="text-align:center;"><strong>L</strong></p>
+        <p style="text-align:center;"><strong>E</strong></p>
+        <p style="text-align:center;"><strong>A</strong></p>
+        <p style="text-align:center;"><strong>R</strong></p>
+        <p style="text-align:center;"><strong>N</strong></p>
+        <p style="text-align:center;"><strong>I</strong></p>
+        <p style="text-align:center;"><strong>N</strong></p>
+        <p style="text-align:center;"><strong>G</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="21%"><strong>Planning</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Definition</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Development</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Maintenance</strong>&nbsp;&raquo;</td>
+    </tr>
+    <tr>
+      <td width="21%"><i>Describe market problems and needs</i></td>
+      <td width="21%"><i>Define solutions to market problems</i></td>
+      <td width="21%"><i>Build solutions that solve market problems</i></td>
+      <td width="21%"><i>Sales channels support and product revisions</i></td>
+    </tr>
+    <tr>
+      <td width="21%"><code class="skill">/prm-market-requirements</code>, <code class="skill">/prm-product-requirements</code>, <code class="skill">/market-requirements</code></td>
+      <td width="21%"><code class="skill">/features-matrix</code></td>
+      <td width="21%"><code class="skill">/pricing-model</code></td>
+      <td width="21%"><code class="skill">/win-loss-questionnaire</code>, <code class="skill">/win-loss-report</code></td>
+    </tr>
+    <tr>
+      <td width="21%"><code class="skill">/use-cases</code></td>
+      <td width="21%"><code class="skill">/product-roadmap</code></td>
+      <td width="21%"><a target="_blank" rel="noopener noreferrer" href="https://www.blackblot.com/ic" title="Product Evangelism">Product Evangelism</a></td>
+      <td width="21%"><code class="skill">/customer-visit</code></td>
+    </tr>
+    <tr>
+      <td colspan="4" width="87%">
+        <p style="text-align:center;">&blacktriangledown;<strong>Product Marketing</strong>&blacktriangledown;</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="21%"><strong>Evaluation</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Strategy</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Readiness</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Execution</strong>&nbsp;&raquo;</td>
+    </tr>
+    <tr>
+      <td width="21%"><i>Examine opportunities to serve the market</i></td>
+      <td width="21%"><i>Formulate the market approach</i></td>
+      <td width="21%"><i>Prepare market tactics and MarCom activities</i></td>
+      <td width="21%"><i>Deliver value and build competitive advantage</i></td>
+    </tr>
+    <tr>
+      <td width="21%"><code class="skill">/business-case</code></td>
+      <td width="21%"><code class="skill">/corporate-mission</code></td>
+      <td width="21%"><code class="skill">/company-profile</code></td>
+      <td width="21%"><code class="skill">/company-presentation</code></td>
+    </tr>
+    <tr>
+      <td width="21%"><code class="skill">/competitor-analysis</code></td>
+      <td width="21%"><code class="skill">/product-positioning</code></td>
+      <td width="21%"><code class="skill">/product-backgrounder</code></td>
+      <td width="21%"><code class="skill">/product-presentation</code></td>
+    </tr>
+    <tr>
+      <td width="21%"><code class="skill">/product-comparison</code></td>
+      <td width="21%"><code class="skill">/sales-axioms</code>, <code class="skill">/psfb</code>, <code class="skill">/usp</code></td>
+      <td width="21%"><code class="skill">/collateral-matrix</code></td>
+      <td width="21%"><code class="skill">/lead-generation</code></td>
+    </tr>
+    <tr>
+      <td width="21%">&nbsp;</td>
+      <td width="21%"><code class="skill">/market-plan</code></td>
+      <td width="21%"><code class="skill">/launch-plan</code></td>
+      <td width="21%"><code class="skill">/marketing-review</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&nbsp;</p>
+<table class="regular_table" style="margin-bottom:20px;" border="0" cellpadding="0" cellspacing="0" summary="Process Efficiency" width="100%">
+  <tbody>
+    <tr>
+      <td class="centerboth" style="width:6%;" rowspan="5">
+        <p style="text-align:center;"><strong>E</strong></p>
+        <p style="text-align:center;"><strong>X</strong></p>
+        <p style="text-align:center;"><strong>E</strong></p>
+        <p style="text-align:center;"><strong>M</strong></p>
+        <p style="text-align:center;"><strong>P</strong></p>
+        <p style="text-align:center;"><strong>T</strong></p>
+      </td>
+      <td colspan="4" width="87%">
+        <p style="text-align:center;">&blacktriangledown;<strong>Process Efficiency</strong>&blacktriangledown;</p>
+      </td>
+      <td class="centerboth" style="width:6%;" rowspan="5">
+        <p style="text-align:center;"><strong>F</strong></p>
+        <p style="text-align:center;"><strong>O</strong></p>
+        <p style="text-align:center;"><strong>R</strong></p>
+        <p style="text-align:center;"><strong>M</strong></p>
+        <p style="text-align:center;"><strong>A</strong></p>
+        <p style="text-align:center;"><strong>L</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="21%"><strong>People</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Decisions</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Deliverables</strong>&nbsp;&raquo;</td>
+      <td width="21%"><strong>Learning</strong>&nbsp;&raquo;</td>
+    </tr>
+    <tr>
+      <td width="21%"><i>Instill flow and structure at work</i></td>
+      <td width="21%"><i>Bring closure and secure commitment</i></td>
+      <td width="21%"><i>Present and share work output</i></td>
+      <td width="21%"><i>Assess and measure performance</i></td>
+    </tr>
+    <tr>
+      <td width="21%"><code class="skill">/meeting-rules</code></td>
+      <td width="21%"><code class="skill">/decision-making</code></td>
+      <td width="21%"><code class="skill">/bundle-book</code></td>
+      <td width="21%"><code class="skill">/gap-analysis</code></td>
+    </tr>
+    <tr>
+      <td width="21%"><code class="skill">/mbo</code></td>
+      <td width="21%"><code class="skill">/deliverable-sign-off</code></td>
+      <td width="21%">&nbsp;</td>
+      <td width="21%"><code class="skill">/performance-review</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<!-- Footer -->
+<table style="width:100%; border-top: 2px solid #FF9933; margin-top: 20px;" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="padding: 15px 0; font-size: 11px; line-height: 16px; color: #999999;">
+      Based on Blackblot PMTK Methodology&trade; by Gabriel Steinhardt. AI implementation powered by <a href="https://github.com/yohayetsion/product-org-os" target="_blank" rel="noopener noreferrer">Product Org OS</a> by Yohay Etsion.
+    </td>
+  </tr>
+</table>
+
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
