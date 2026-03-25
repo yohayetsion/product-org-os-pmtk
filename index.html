@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Org OS — PMTK Edition | AI-Powered Product Management</title>
+    <meta name="description" content="The first AI-powered implementation of Blackblot's PMTK Product Manager's Toolkit. 6 AI agents, 63 skills, built on the PMTK methodology by Gabriel Steinhardt.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100' height='100' rx='12' fill='%23fff'/%3E%3Cg transform='translate(-32.3,-13.14) scale(0.45) translate(35,30)'%3E%3Cpath fill='%23000' d='M220.1,49.8c-7.3,7.2-18,11-26.3,17.3-.5,2,1.5,1.5,1.5,3,4.3,1,6.8-3.6,10.5-.8-1.9,3.6-8.2,2.8-9.8,6.8,1.4,4.1,9.8,1.2,8.3,8.3-3.7,1-8.9.6-8.3,6,4.2,4.1,10.6,5.9,12,12.8-4.1-1.2-7.9-3.6-12-.8-.2,12.5,8.5,16,12.8,24-5.7-2.8-8.8-8.2-15.8-9.8-1.1.7-2.4,1.1-2.3,3,2.3,3.2,4.4,6.6,9,7.5,1.1,2.5,1.6,7.8-2.3,7.5-3.7-4.1-3.2-11.9-9.8-11.3-3.1.3-6.1,5.2-5.3,9,.6,2.5,4.4,2,3.8,5.3-4.3.3-4.7-3.3-9-3-4.2,10-2.7,27.8-2.3,38.3-3.4-9.4-3.8-21.7-5.3-33-1.7-.8-2.7-2.3-5.3-2.3-2.9,2.8-4.6,7.1-2.3,11.3-3.3-.4-4.7-2.8-6-5.3-3.1,3.6-2,11.5-2.3,18-4.8-4.2,1.7-13.9-3.8-18.8-9-.2-11.6,5.9-12,14.3-3.9-1.1-1.6-8.3-2.3-12.8-3.3-1.7-7.5-2.5-9.8-5.3-5.7,1.5-7.4,7.1-11.3,10.5,0-1,2.3-6.2,3-9,.6-2.3-2.6-.9-1.5-3.8-5.5-.3-10.1.4-12,3.8-2.1-3.8,5-5,3.8-10.5-7.4-.9-14,5.5-18,10.5-4.4,3.7-9.5,7.3-14.3,12-6.9,2.6-10.5,8.5-15.7,12.8,8-16.1,28.6-25.9,39.7-41.3,.6-2.3-2.6-.9-1.5-3.8-2.8-.6-3.6.9-6,.8,1.5-1,1.8-3.2,3-4.5-1.8-.7-2.8-2.3-6-1.5,1-3,5.1-2.9,6-6-4.7-5.6-13.5.5-18,2.3,1.5-5.8,6-8.5,10.5-11.3-9.1-8.6-35.4-5.7-54.8-6.8-1.8-1.4,5-.5,6.8-.8,1.7.4,1.1-1.4,2.3-1.5,14.1-1.7,32.5,1,44.3-3-6.7-8.3-22.3-7.7-34.5-10.5,8.3-6.8,26.7,2.2,37.5,0v-3c-3.8-4.1-14.2-1.8-18-6,.5-1.7,1.9-2.6,3-3.8,4.9,1.4,10,4.7,15.8,3-.2-8.6-7.6-9.9-15.8-10.5,3.9-2.4,13-1.7,18-.8,.8-3.8-3-3-3-6,3.4.1,4.1,2.9,6.8,3.8,4.7.7,3.7-4.3,3.7-8.3,3.3,0,7,.4,8.3-1.5,.6-6.1-4-7-4.5-12,4.1,1.6,6.5,5,13.5,3.8,.8-1.4,1.9-2.6,2.3-4.5-2.9-5.3-5.8-10.7-9-15.7,6.1,3.6,9.7,9.8,12.8,16.5,6.5.2,1.4-12.4,1.5-12.7,4.6-.1,1.7,7.3,6.8,6.7,3.4-2.1,1.5-9.5,3.8-12.7,2.2,3.3,2.9,8.1,3,13.5,6.5,4.5,19.2,3,20.3-11.2,4.4,1.6,1.6,10.9,1.5,15,5,4.8,11.2,2.4,12-4.5,2.8,1,4.4,3.1,6,5.3-.8,2.2-3.9,2.1-6,3,.1,3.4,3.9,3.1,5.3,5.3,3.8-.7,3.7-5.3,6-7.5,3.8.9,6.4,3.1,6.8,7.5-3.5-.6-5.2.8-8.3.8-.6,2.6,1.1,2.9.8,5.3,1.6.4,6.1,1.8,7.5,0,1.6,1.5-1.3,5.9.8,8.3C200,63.3,211.2,52.4,220.1,49.8Z'/%3E%3C/g%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #E46C0A;
+            --primary-light: #F5923E;
+            --primary-dark: #C25E0E;
+            --secondary: #0092EF;
+            --secondary-light: #33a8f5;
+            --bg: #000000;
+            --bg-card: #111111;
+            --bg-elevated: #1a1a1a;
+            --bg-hover: #222222;
+            --text: #f0f0f0;
+            --text-muted: #999999;
+            --text-dim: #666666;
+            --border: #222222;
+            --border-light: #333333;
+            --gradient-brand: linear-gradient(135deg, #E46C0A 0%, #F5923E 100%);
+            --gradient-secondary: linear-gradient(135deg, #0092EF 0%, #33a8f5 100%);
+            --gradient-mixed: linear-gradient(135deg, #E46C0A 0%, #0092EF 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) var(--bg);
+        }
+
+        body {
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.6rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--text);
+        }
+
+        .nav-logo-icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .nav-logo .brand-pmtk {
+            color: var(--primary);
+        }
+
+        .nav-logo .brand-os {
+            color: var(--text-muted);
+            font-size: 0.85em;
+            opacity: 0.8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.25rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.4rem 0.7rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+            background: var(--bg-elevated);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 1.4rem;
+            cursor: pointer;
+            padding: 0.3rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.98);
+                border-bottom: 1px solid var(--border);
+                padding: 1rem;
+                gap: 0.25rem;
+            }
+            .nav-links.open a {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+            .hamburger { display: block; }
+        }
+
+        /* Sections */
+        section {
+            padding: 6rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            color: var(--primary);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.15;
+        }
+
+        .section-desc {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.65;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 70% 50% at 50% 0%, rgba(228, 108, 10, 0.08) 0%, transparent 100%),
+                radial-gradient(ellipse 50% 40% at 80% 80%, rgba(0, 146, 239, 0.06) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 100px;
+            padding: 0.4rem 1.2rem 0.4rem 0.6rem;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--secondary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.08;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 .highlight-orange {
+            background: var(--gradient-brand);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero h1 .highlight-teal {
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 1.2rem auto 2rem;
+            font-weight: 400;
+            line-height: 1.55;
+        }
+
+        .hero-attribution {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-attribution span {
+            font-size: 0.88rem;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        .hero-attribution strong {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.8rem;
+            border-radius: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--gradient-brand);
+            color: white;
+            box-shadow: 0 4px 20px rgba(228, 108, 10, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(228, 108, 10, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text);
+            border: 1px solid var(--border-light);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-elevated);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: clamp(1.5rem, 4vw, 3.5rem);
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            background: var(--gradient-brand);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* What Is This */
+        .what-is {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .what-is-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .what-is-grid { grid-template-columns: 1fr; }
+        }
+
+        .what-is-text h2 {
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.15;
+        }
+
+        .what-is-text p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .what-is-text .first-ai {
+            display: inline-block;
+            background: var(--gradient-brand);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        .what-is-terminal {
+            background: #0a0a0a;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .terminal-bar {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 14px;
+            background: #161616;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .terminal-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .terminal-dot.r { background: #ff5f56; }
+        .terminal-dot.y { background: #ffbd2e; }
+        .terminal-dot.g { background: #27ca40; }
+
+        .terminal-title {
+            margin-left: 8px;
+            color: var(--text-dim);
+            font-size: 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .terminal-body {
+            padding: 1.25rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        .terminal-body .prompt { color: #0092EF; font-weight: 600; }
+        .terminal-body .cmd { color: var(--primary); font-weight: 600; }
+        .terminal-body .arg { color: var(--text-muted); }
+        .terminal-body .comment { color: var(--text-dim); }
+        .terminal-body .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: var(--primary);
+            animation: blink 1s step-end infinite;
+            vertical-align: text-bottom;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Dual Track */
+        .dual-track-visual {
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        .track-row {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            align-items: stretch;
+        }
+
+        @media (max-width: 768px) {
+            .track-row {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+        }
+
+        .track-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem 0.75rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+            line-height: 1.3;
+        }
+
+        .track-label.planning {
+            background: linear-gradient(135deg, rgba(228, 108, 10, 0.15), rgba(228, 108, 10, 0.05));
+            border: 1px solid rgba(228, 108, 10, 0.3);
+            color: var(--primary-light);
+        }
+
+        .track-label.marketing {
+            background: linear-gradient(135deg, rgba(0, 146, 239, 0.15), rgba(0, 146, 239, 0.05));
+            border: 1px solid rgba(0, 146, 239, 0.3);
+            color: var(--secondary-light);
+        }
+
+        .track-phases {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.6rem;
+        }
+
+        @media (max-width: 600px) {
+            .track-phases {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .phase-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phase-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+        }
+
+        .phase-card.pp::before { background: var(--gradient-brand); }
+        .phase-card.pm::before { background: var(--gradient-secondary); }
+
+        .phase-card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-2px);
+        }
+
+        .phase-card h4 {
+            font-size: 0.88rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .phase-card p {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+        }
+
+        .crosscutting {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .crosscutting-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            background: var(--bg-elevated);
+            border: 1px dashed var(--border-light);
+            border-radius: 100px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .crosscutting-pill .icon { font-size: 1rem; }
+
+        /* Agent Cards */
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .agent-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .agent-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(228, 108, 10, 0.1);
+        }
+
+        .agent-card.gateway {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(228, 108, 10, 0.06), var(--bg-card));
+        }
+
+        .agent-card.gateway:hover {
+            box-shadow: 0 12px 40px rgba(228, 108, 10, 0.2);
+        }
+
+        .agent-emoji {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .agent-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .agent-role {
+            font-size: 0.82rem;
+            color: var(--primary-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.6rem;
+        }
+
+        .agent-question {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .agent-invoke {
+            display: inline-block;
+            margin-top: 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.78rem;
+            color: var(--secondary);
+            background: rgba(0, 146, 239, 0.08);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 146, 239, 0.15);
+        }
+
+        /* Skills Section */
+        .skills-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .skill-tab {
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .skill-tab:hover, .skill-tab.active {
+            background: var(--bg-elevated);
+            border-color: var(--primary);
+            color: var(--text);
+        }
+
+        .skill-tab.active {
+            background: rgba(228, 108, 10, 0.1);
+            color: var(--primary-light);
+        }
+
+        .skill-tab .count {
+            display: inline-block;
+            background: var(--bg-elevated);
+            border-radius: 4px;
+            padding: 0.1rem 0.35rem;
+            font-size: 0.72rem;
+            margin-left: 0.3rem;
+            color: var(--text-dim);
+        }
+
+        .skill-tab.active .count {
+            background: rgba(228, 108, 10, 0.2);
+            color: var(--primary-light);
+        }
+
+        .skills-panel {
+            display: none;
+        }
+
+        .skills-panel.active {
+            display: block;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 0.6rem;
+        }
+
+        .skill-item {
+            display: grid;
+            grid-template-columns: minmax(120px, auto) 1fr auto;
+            gap: 0.75rem;
+            align-items: baseline;
+            padding: 0.7rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .skill-item:hover {
+            border-color: var(--border-light);
+            background: var(--bg-elevated);
+        }
+
+        .skill-cmd {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.78rem;
+            color: var(--primary);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .skill-desc {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .skill-owner {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 600px) {
+            .skills-list { grid-template-columns: 1fr; }
+            .skill-item { grid-template-columns: 1fr; gap: 0.25rem; }
+            .skill-owner { display: none; }
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon.orange {
+            background: rgba(228, 108, 10, 0.12);
+            border: 1px solid rgba(228, 108, 10, 0.2);
+        }
+
+        .feature-icon.teal {
+            background: rgba(0, 146, 239, 0.12);
+            border: 1px solid rgba(0, 146, 239, 0.2);
+        }
+
+        .feature-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        /* By The Numbers */
+        .numbers-section {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .numbers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .number-item {
+            text-align: center;
+            padding: 1.5rem 0.5rem;
+        }
+
+        .number-value {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+
+        .number-value.orange {
+            background: var(--gradient-brand);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .number-value.teal {
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .number-value.mixed {
+            background: var(--gradient-mixed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .number-label {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Quick Start */
+        .quickstart-card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #0a0a0a;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .quickstart-header {
+            padding: 1rem 1.5rem;
+            background: #161616;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quickstart-header span {
+            color: var(--text-dim);
+            font-size: 0.82rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .quickstart-body {
+            padding: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 2.2;
+        }
+
+        .quickstart-body .step {
+            color: var(--text-dim);
+            user-select: none;
+        }
+
+        .quickstart-body .qs-comment {
+            color: var(--text-dim);
+            font-style: italic;
+        }
+
+        .quickstart-body .qs-cmd {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .quickstart-body .qs-arg {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .footer-attribution {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-attribution p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-attribution a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-attribution a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-copy {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+        }
+
+        /* Scroll animations */
+        .animate-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .animate-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Separator */
+        .section-sep {
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-brand);
+            border-radius: 2px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Code inline */
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+            background: var(--bg-elevated);
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">
+            <img class="nav-logo-icon" src="https://www.blackblot.com/files/images/branding/blackblot_splat_vector_reverse.svg" alt="Blackblot" style="width:32px;height:32px;">
+            <span><span class="brand-pmtk">Product Org OS</span> PMTK Version</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#what-is-this">About</a>
+            <a href="#dual-track">Dual Track</a>
+            <a href="#agents">Agents</a>
+            <a href="#skills">Skills</a>
+            <a href="#features">Features</a>
+            <a href="#quick-start">Quick Start</a>
+        </div>
+        <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content container">
+        <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Built for Claude Code</span>
+        </div>
+
+        <h1>
+            <span class="highlight-orange">Product Org OS</span><br>
+            <span class="highlight-teal">PMTK Edition</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            AI-Powered Product Management Built on<br>
+            Blackblot's PMTK Methodology
+        </p>
+
+        <div class="hero-attribution">
+            <span>Powered by <strong>Blackblot PMTK Methodology&trade;</strong> by Gabriel Steinhardt</span>
+            <span>AI implementation by <strong>Product Org OS</strong> by Yohay Etsion</span>
+        </div>
+
+        <!-- no CTA buttons -->
+
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-value">6</div>
+                <div class="stat-label">AI Agents</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">63</div>
+                <div class="stat-label">Skills</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">8</div>
+                <div class="stat-label">PMTK Phases</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">12</div>
+                <div class="stat-label">Knowledge Packs</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What Is This -->
+<section class="what-is" id="what-is-this">
+    <div class="container">
+        <div class="what-is-grid animate-in">
+            <div class="what-is-text">
+                <div class="section-label">About</div>
+                <h2>
+                    <span class="first-ai">The first AI-powered implementation</span><br>
+                    of the PMTK Product Manager's Toolkit
+                </h2>
+                <p>
+                    Product Org OS &mdash; PMTK Edition brings Blackblot's proven product management methodology into Claude Code as a living, interactive operating system. Six AI agents work as your product management team, each mastering a distinct PMTK role.
+                </p>
+                <p>
+                    With 63 skills mapping to PMTK blueprint templates, 12 knowledge packs encoding methodology fundamentals, and a context layer preserving organizational memory across sessions &mdash; this is product management methodology made actionable through AI.
+                </p>
+            </div>
+            <div class="what-is-terminal">
+                <div class="terminal-bar">
+                    <div class="terminal-dot r"></div>
+                    <div class="terminal-dot y"></div>
+                    <div class="terminal-dot g"></div>
+                    <span class="terminal-title">claude-code</span>
+                </div>
+                <div class="terminal-body">
+                    <div><span class="prompt">$</span> <span class="cmd">/market-requirements</span> <span class="arg">"Enterprise CRM"</span></div>
+                    <div><span class="comment"># Product Planner generates MRD</span></div>
+                    <br>
+                    <div><span class="prompt">$</span> <span class="cmd">@product-marketer</span> <span class="arg">position against Salesforce</span></div>
+                    <div><span class="comment"># Marketer creates positioning doc</span></div>
+                    <br>
+                    <div><span class="prompt">$</span> <span class="cmd">@pmtk</span> <span class="arg">evaluate launch readiness</span></div>
+                    <div><span class="comment"># Multi-agent assessment</span></div>
+                    <br>
+                    <div><span class="prompt">$</span> <span class="cursor"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dual Track Model -->
+<section id="dual-track">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-label">Methodology</div>
+            <h2 class="section-title">The PMTK Dual-Track Model</h2>
+            <p class="section-desc">Product Planning and Product Marketing run in parallel. Two tracks, eight phases, one unified product lifecycle.</p>
+        </div>
+
+        <div class="dual-track-visual animate-in">
+            <!-- Product Planning Track -->
+            <div class="track-row">
+                <div class="track-label planning">Product<br>Planning</div>
+                <div class="track-phases">
+                    <div class="phase-card pp">
+                        <h4>Planning</h4>
+                        <p>Describe market problems and needs. Identify what customers require.</p>
+                    </div>
+                    <div class="phase-card pp">
+                        <h4>Definition</h4>
+                        <p>Define solutions to market problems. Features, roadmap, requirements.</p>
+                    </div>
+                    <div class="phase-card pp">
+                        <h4>Development</h4>
+                        <p>Build solutions that solve market problems. Pricing and delivery.</p>
+                    </div>
+                    <div class="phase-card pp">
+                        <h4>Maintenance</h4>
+                        <p>Sales channel support, product revisions, win/loss analysis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Marketing Track -->
+            <div class="track-row">
+                <div class="track-label marketing">Product<br>Marketing</div>
+                <div class="track-phases">
+                    <div class="phase-card pm">
+                        <h4>Evaluation</h4>
+                        <p>Examine opportunities to serve the market. Business case analysis.</p>
+                    </div>
+                    <div class="phase-card pm">
+                        <h4>Strategy</h4>
+                        <p>Formulate market approach. Positioning, messaging, value props.</p>
+                    </div>
+                    <div class="phase-card pm">
+                        <h4>Readiness</h4>
+                        <p>Prepare market tactics and MarCom activities. Collateral, launch prep.</p>
+                    </div>
+                    <div class="phase-card pm">
+                        <h4>Execution</h4>
+                        <p>Deliver value and build competitive advantage. Campaigns, reviews.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cross-cutting -->
+            <div class="crosscutting">
+                <div class="crosscutting-pill">
+                    <span class="icon">&#128269;</span>
+                    <span>RESEARCH spans all phases</span>
+                </div>
+                <div class="crosscutting-pill">
+                    <span class="icon">&#128218;</span>
+                    <span>LEARNING spans all phases</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet Your AI Team -->
+<section id="agents" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-label">AI Team</div>
+            <h2 class="section-title">Meet Your AI Product Team</h2>
+            <p class="section-desc">Six agents matching Blackblot's PM Team and PD Team role models, plus a gateway for multi-agent collaboration.</p>
+        </div>
+
+        <div class="agents-grid animate-in">
+            <div class="agent-card">
+                <span class="agent-emoji">&#x1F4CB;</span>
+                <div class="agent-name">Product Planner</div>
+                <div class="agent-role">Market Expert</div>
+                <div class="agent-question">"What market problems exist and what do customers need?"</div>
+                <div class="agent-invoke">@product-planner</div>
+            </div>
+
+            <div class="agent-card">
+                <span class="agent-emoji">&#x1F4E3;</span>
+                <div class="agent-name">Product Marketer</div>
+                <div class="agent-role">Marketing Expert</div>
+                <div class="agent-question">"How do we communicate and deliver value?"</div>
+                <div class="agent-invoke">@product-marketer</div>
+            </div>
+
+            <div class="agent-card">
+                <span class="agent-emoji">&#x1F3D7;&#xFE0F;</span>
+                <div class="agent-name">Product Architect</div>
+                <div class="agent-role">Product Expert</div>
+                <div class="agent-question">"How do we solve the market problem?"</div>
+                <div class="agent-invoke">@product-architect</div>
+            </div>
+
+            <div class="agent-card">
+                <span class="agent-emoji">&#x1F3AF;</span>
+                <div class="agent-name">Sales Engineer</div>
+                <div class="agent-role">Advocacy Expert</div>
+                <div class="agent-question">"How do we demonstrate value to buyers?"</div>
+                <div class="agent-invoke">@sales-engineer</div>
+            </div>
+
+            <div class="agent-card">
+                <span class="agent-emoji">&#x1F4F0;</span>
+                <div class="agent-name">MarCom Manager</div>
+                <div class="agent-role">Media Expert</div>
+                <div class="agent-question">"How do we present consistently across channels?"</div>
+                <div class="agent-invoke">@marcom-manager</div>
+            </div>
+
+            <div class="agent-card">
+                <span class="agent-emoji">&#x1F454;</span>
+                <div class="agent-name">Director of Products</div>
+                <div class="agent-role">Strategy Expert</div>
+                <div class="agent-question">"Where are we going and how do we get there?"</div>
+                <div class="agent-invoke">@director-of-products</div>
+            </div>
+
+            <div class="agent-card gateway">
+                <span class="agent-emoji">&#x1F3DB;&#xFE0F;</span>
+                <div class="agent-name">PMTK Gateway</div>
+                <div class="agent-role" style="color: var(--secondary-light);">Multi-Agent Collaboration</div>
+                <div class="agent-question">Routes to the right team members. Synthesizes multi-agent perspectives in Meeting Mode.</div>
+                <div class="agent-invoke">@pmtk</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 63 Skills -->
+<section id="skills">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-label">Capabilities</div>
+            <h2 class="section-title">63 Skills by PMTK Phase</h2>
+            <p class="section-desc">Every skill maps to a PMTK blueprint template. Create, update, or find any deliverable.</p>
+        </div>
+
+        <div class="animate-in">
+            <div class="skills-tabs">
+                <button class="skill-tab active" onclick="window.showPanel('pp')">Product Planning <span class="count">12</span></button>
+                <button class="skill-tab" onclick="window.showPanel('pm')">Product Marketing <span class="count">19</span></button>
+                <button class="skill-tab" onclick="window.showPanel('pe')">Process Efficiency <span class="count">7</span></button>
+                <button class="skill-tab" onclick="window.showPanel('sup')">Supplemental <span class="count">5</span></button>
+                <button class="skill-tab" onclick="window.showPanel('tm')">Team Management <span class="count">5</span></button>
+                <button class="skill-tab" onclick="window.showPanel('ctx')">Context & Utility <span class="count">8</span></button>
+                <button class="skill-tab" onclick="window.showPanel('ag')">Agents & Gateway <span class="count">7</span></button>
+            </div>
+
+            <!-- Product Planning -->
+            <div class="skills-panel active" id="panel-pp">
+                <div class="skills-list">
+                    <div class="skill-item"><span class="skill-cmd">/market-requirements</span><span class="skill-desc">Market Requirements Document</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/prm-market-requirements</span><span class="skill-desc">PRM-structured market reqs</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/use-cases</span><span class="skill-desc">Use case documentation</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/features-matrix</span><span class="skill-desc">Product features matrix</span><span class="skill-owner">Architect</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/product-roadmap</span><span class="skill-desc">Product roadmap planning</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/prm-product-requirements</span><span class="skill-desc">PRM-structured product reqs</span><span class="skill-owner">Architect</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/pricing-model</span><span class="skill-desc">Pricing model development</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/win-loss-questionnaire</span><span class="skill-desc">Win/loss questionnaire</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/win-loss-report</span><span class="skill-desc">Win/loss analysis report</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/customer-visit</span><span class="skill-desc">Customer visit planning</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/agile-guidelines</span><span class="skill-desc">Agile process guidelines</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/scrum-backlog</span><span class="skill-desc">Scrum backlog management</span><span class="skill-owner">Planner</span></div>
+                </div>
+            </div>
+
+            <!-- Product Marketing -->
+            <div class="skills-panel" id="panel-pm">
+                <div class="skills-list">
+                    <div class="skill-item"><span class="skill-cmd">/business-case</span><span class="skill-desc">Business case analysis</span><span class="skill-owner">DoP / Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/competitor-analysis</span><span class="skill-desc">Competitor analysis</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/product-comparison</span><span class="skill-desc">Product comparison matrix</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/corporate-mission</span><span class="skill-desc">Corporate mission statement</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/product-positioning</span><span class="skill-desc">Product positioning statement</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/psfb</span><span class="skill-desc">Problem, Solution, Features, Benefits</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/sales-axioms</span><span class="skill-desc">Sales axioms framework</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/usp</span><span class="skill-desc">Unique Selling Proposition</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/market-plan</span><span class="skill-desc">Market plan development</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/company-profile</span><span class="skill-desc">Company profile document</span><span class="skill-owner">Marketer / MarCom</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/product-backgrounder</span><span class="skill-desc">Product backgrounder</span><span class="skill-owner">Marketer / MarCom</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/collateral-matrix</span><span class="skill-desc">Collateral matrix planning</span><span class="skill-owner">Marketer / MarCom</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/press-release-questionnaire</span><span class="skill-desc">Press release questionnaire</span><span class="skill-owner">Marketer / MarCom</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/launch-plan</span><span class="skill-desc">Product launch plan</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/marketing-plan</span><span class="skill-desc">Marketing plan</span><span class="skill-owner">MarCom</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/company-presentation</span><span class="skill-desc">Company presentation</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/product-presentation</span><span class="skill-desc">Product presentation</span><span class="skill-owner">Marketer / SE</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/lead-generation</span><span class="skill-desc">Lead generation planning</span><span class="skill-owner">Marketer</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/marketing-review</span><span class="skill-desc">Marketing review assessment</span><span class="skill-owner">Marketer</span></div>
+                </div>
+            </div>
+
+            <!-- Process Efficiency -->
+            <div class="skills-panel" id="panel-pe">
+                <div class="skills-list">
+                    <div class="skill-item"><span class="skill-cmd">/decision-making</span><span class="skill-desc">Decision making guidelines</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/deliverable-sign-off</span><span class="skill-desc">Formal deliverable sign-off</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/gap-analysis</span><span class="skill-desc">Performance gap analysis</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/bundle-book</span><span class="skill-desc">Deliverable bundle organization</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/meeting-rules</span><span class="skill-desc">Meeting management guidelines</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/mbo</span><span class="skill-desc">Management by objectives</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/performance-review</span><span class="skill-desc">Performance evaluation</span><span class="skill-owner">DoP</span></div>
+                </div>
+            </div>
+
+            <!-- Supplemental -->
+            <div class="skills-panel" id="panel-sup">
+                <div class="skills-list">
+                    <div class="skill-item"><span class="skill-cmd">/b2b-buyer-persona</span><span class="skill-desc">B2B buyer persona development</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/corporate-strategy-mix</span><span class="skill-desc">Corporate strategy framework</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/minimum-viable-product</span><span class="skill-desc">MVP definition and planning</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/product-market-fit</span><span class="skill-desc">Product-market fit assessment</span><span class="skill-owner">Planner</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/product-vision</span><span class="skill-desc">Product vision and concept</span><span class="skill-owner">Planner</span></div>
+                </div>
+            </div>
+
+            <!-- Team Management -->
+            <div class="skills-panel" id="panel-tm">
+                <div class="skills-list">
+                    <div class="skill-item"><span class="skill-cmd">/role-descriptions</span><span class="skill-desc">PMTK role definitions</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/job-description</span><span class="skill-desc">Job description creation</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/interview-process</span><span class="skill-desc">Interview process guidelines</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/team-charter</span><span class="skill-desc">PM team charter</span><span class="skill-owner">DoP</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/professional-development</span><span class="skill-desc">Professional development plan</span><span class="skill-owner">DoP</span></div>
+                </div>
+            </div>
+
+            <!-- Context & Utility -->
+            <div class="skills-panel" id="panel-ctx">
+                <div class="skills-list">
+                    <div class="skill-item"><span class="skill-cmd">/context-save</span><span class="skill-desc">Save decisions, bets, learnings</span><span class="skill-owner">System</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/context-recall</span><span class="skill-desc">Query past decisions</span><span class="skill-owner">System</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/feedback-capture</span><span class="skill-desc">Capture product feedback</span><span class="skill-owner">System</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/feedback-recall</span><span class="skill-desc">Query past feedback</span><span class="skill-owner">System</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/handoff</span><span class="skill-desc">Session handoff briefing</span><span class="skill-owner">System</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/portfolio-status</span><span class="skill-desc">View active portfolio state</span><span class="skill-owner">System</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/present</span><span class="skill-desc">Convert to presentation</span><span class="skill-owner">System</span></div>
+                    <div class="skill-item"><span class="skill-cmd">/setup</span><span class="skill-desc">Initialize plugin context</span><span class="skill-owner">System</span></div>
+                </div>
+            </div>
+
+            <!-- Agents & Gateway -->
+            <div class="skills-panel" id="panel-ag">
+                <div class="skills-list">
+                    <div class="skill-item"><span class="skill-cmd">@product-planner</span><span class="skill-desc">Market Expert &mdash; market requirements, use cases, pricing, roadmap</span><span class="skill-owner">Strategic</span></div>
+                    <div class="skill-item"><span class="skill-cmd">@product-marketer</span><span class="skill-desc">Marketing Expert &mdash; positioning, competitive analysis, GTM</span><span class="skill-owner">Strategic</span></div>
+                    <div class="skill-item"><span class="skill-cmd">@product-architect</span><span class="skill-desc">Product Expert &mdash; features matrix, PRD, solution design</span><span class="skill-owner">Tactical</span></div>
+                    <div class="skill-item"><span class="skill-cmd">@sales-engineer</span><span class="skill-desc">Advocacy Expert &mdash; demos, presentations, presale</span><span class="skill-owner">Tactical</span></div>
+                    <div class="skill-item"><span class="skill-cmd">@marcom-manager</span><span class="skill-desc">Media Expert &mdash; collateral, press, company profiles</span><span class="skill-owner">Tactical</span></div>
+                    <div class="skill-item"><span class="skill-cmd">@director-of-products</span><span class="skill-desc">Strategy Expert &mdash; corporate mission, portfolio, process</span><span class="skill-owner">Strategic</span></div>
+                    <div class="skill-item"><span class="skill-cmd">@pmtk</span><span class="skill-desc">Gateway &mdash; multi-agent Meeting Mode with synthesis</span><span class="skill-owner">Gateway</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Features -->
+<section id="features">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-label">Capabilities</div>
+            <h2 class="section-title">Key Features</h2>
+            <p class="section-desc">Everything you need to run a structured, methodology-driven product management practice with AI.</p>
+        </div>
+
+        <div class="features-grid animate-in">
+            <div class="feature-card">
+                <div class="feature-icon orange">&#x1F4C4;</div>
+                <h3>Document Intelligence</h3>
+                <p>Create, Update, or Find any PMTK deliverable. Skills support three modes, so documents evolve naturally across the product lifecycle.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon teal">&#x1F465;</div>
+                <h3>PMTK Role Model</h3>
+                <p>Agents match Blackblot's PM Team and PD Team exactly. Product Planner, Marketer, Architect, Sales Engineer, MarCom Manager, and Director of Products.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon orange">&#x1F9E0;</div>
+                <h3>Organizational Memory</h3>
+                <p>The context layer preserves decisions, feedback, and learnings across sessions. Auto-context injection gives agents awareness of past work.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon teal">&#x1F3DB;&#xFE0F;</div>
+                <h3>Meeting Mode</h3>
+                <p>The PMTK Gateway spawns multiple agents for cross-functional collaboration. Each agent speaks in first person before a synthesis.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon orange">&#x1F50C;</div>
+                <h3>MCP Integration</h3>
+                <p>Connect to Jira, Slack, Confluence, and more when available. Graceful fallback to markdown when tools are not connected.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon teal">&#x1F4DA;</div>
+                <h3>12 Knowledge Packs</h3>
+                <p>PMTK methodology encoded as reference material: Flow Model, Action Model, Product Frames, Problem Echelon, Glossary, and more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- By The Numbers -->
+<section class="numbers-section" id="numbers">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-label">Scale</div>
+            <h2 class="section-title">By The Numbers</h2>
+        </div>
+
+        <div class="numbers-grid animate-in">
+            <div class="number-item">
+                <div class="number-value orange">6</div>
+                <div class="number-label">AI Agents</div>
+            </div>
+            <div class="number-item">
+                <div class="number-value teal">63</div>
+                <div class="number-label">Skills</div>
+            </div>
+            <div class="number-item">
+                <div class="number-value mixed">48</div>
+                <div class="number-label">PMTK Blueprints</div>
+            </div>
+            <div class="number-item">
+                <div class="number-value orange">20</div>
+                <div class="number-label">Behavioral Rules</div>
+            </div>
+            <div class="number-item">
+                <div class="number-value teal">12</div>
+                <div class="number-label">Knowledge Packs</div>
+            </div>
+            <div class="number-item">
+                <div class="number-value mixed">2</div>
+                <div class="number-label">Parallel Tracks</div>
+            </div>
+            <div class="number-item">
+                <div class="number-value orange">8</div>
+                <div class="number-label">PMTK Phases</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Start -->
+<section id="quick-start">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-label">Get Started</div>
+            <h2 class="section-title">Quick Start</h2>
+            <p class="section-desc">Up and running in under a minute. Install, initialize, and start creating PMTK deliverables.</p>
+        </div>
+
+        <div class="animate-in">
+            <div class="quickstart-card">
+                <div class="quickstart-header">
+                    <div class="terminal-dot r"></div>
+                    <div class="terminal-dot y"></div>
+                    <div class="terminal-dot g"></div>
+                    <span>getting-started</span>
+                </div>
+                <div class="quickstart-body">
+                    <div><span class="step">1.</span> <span class="qs-comment"># Install the plugin in Claude Code</span></div>
+                    <div><span class="step">2.</span> <span class="qs-cmd">/setup</span> <span class="qs-arg">                          </span> <span class="qs-comment"># Initialize context layer</span></div>
+                    <div><span class="step">3.</span> <span class="qs-cmd">/product-vision</span> <span class="qs-arg">[your product]</span> <span class="qs-comment"># Define product vision</span></div>
+                    <div><span class="step">4.</span> <span class="qs-cmd">@product-planner</span> <span class="qs-arg">write market requirements for [product]</span></div>
+                    <div><span class="step">5.</span> <span class="qs-cmd">@product-marketer</span> <span class="qs-arg">position [product] against competitors</span></div>
+                    <div><span class="step">6.</span> <span class="qs-cmd">@pmtk</span> <span class="qs-arg">evaluate launch readiness for [product]</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-attribution">
+            <p>Based on <a href="https://www.blackblot.com/methodology" target="_blank" rel="noopener">Blackblot PMTK Methodology&trade;</a> by <strong>Gabriel Steinhardt</strong></p>
+            <p>AI implementation powered by <a href="https://yohayetsion.github.io/product-org-os/" target="_blank" rel="noopener">Product Org OS</a> by <strong>Yohay Etsion</strong></p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.blackblot.com" target="_blank" rel="noopener">blackblot.com</a>
+            <a href="https://yohayetsion.github.io/product-org-os/" target="_blank" rel="noopener">Product Org OS</a>
+            <a href="#" target="_blank" rel="noopener">GitHub Repository</a>
+            <a href="https://www.blackblot.com/pmtk-book" target="_blank" rel="noopener">PMTK Book</a>
+        </div>
+        <p class="footer-copy">PMTK&reg; is a registered trademark of Blackblot. Used with permission for educational purposes.</p>
+    </div>
+</footer>
+
+<script>
+(function() {
+    // Scroll-based nav styling
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    // Close mobile menu on link click
+    var navLinks = document.getElementById('navLinks');
+    var links = navLinks.querySelectorAll('a');
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+            navLinks.classList.remove('open');
+        });
+    }
+
+    // Skills tab switching
+    window.showPanel = function(id) {
+        // Deactivate all tabs and panels
+        var tabs = document.querySelectorAll('.skill-tab');
+        var panels = document.querySelectorAll('.skills-panel');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+        }
+        for (var j = 0; j < panels.length; j++) {
+            panels[j].classList.remove('active');
+        }
+        // Activate selected
+        document.getElementById('panel-' + id).classList.add('active');
+        // Find matching tab
+        var tabMap = { 'pp': 0, 'pm': 1, 'pe': 2, 'sup': 3, 'tm': 4, 'ctx': 5, 'ag': 6 };
+        if (tabMap[id] !== undefined) {
+            tabs[tabMap[id]].classList.add('active');
+        }
+    };
+
+    // Intersection Observer for scroll animations
+    var animateElements = document.querySelectorAll('.animate-in');
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            for (var i = 0; i < entries.length; i++) {
+                if (entries[i].isIntersecting) {
+                    entries[i].target.classList.add('visible');
+                    observer.unobserve(entries[i].target);
+                }
+            }
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        for (var k = 0; k < animateElements.length; k++) {
+            observer.observe(animateElements[k]);
+        }
+    } else {
+        // Fallback: show everything
+        for (var m = 0; m < animateElements.length; m++) {
+            animateElements[m].classList.add('visible');
+        }
+    }
+})();
+</script>
+
+</body>
+</html>
